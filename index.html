@@ -154,21 +154,44 @@
   }
 }
 </style>
-<div style="text-align:center; margin: 28px 0;">
-  <a href="/programas"
-     style="
-       background:#145da0;
-       color:#fff;
-       padding:14px 30px;
-       text-decoration:none;
-       font-size:1.1rem;
-       font-weight:600;
-       border-radius:6px;
-       display:inline-block;
-     ">
-    Programas
-  </a>
-</div>
+<!-- Botão Programas - Canto Superior Esquerdo -->
+<a href="/programas" class="btn-programas">
+  Programas
+</a>
+
+<style>
+.btn-programas {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  background: #c1121f; /* vermelho institucional */
+  color: #ffffff;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-programas:hover {
+  background: #9b0f18;
+  transform: scale(1.05);
+}
+
+/* Ajuste mobile */
+@media (max-width: 600px) {
+  .btn-programas {
+    top: 12px;
+    left: 12px;
+    padding: 9px 18px;
+    font-size: 0.9rem;
+  }
+}
+</style>
+
 
 <body>
 
