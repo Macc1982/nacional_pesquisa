@@ -9,9 +9,9 @@
     :root {
       --primary: #0b2a4a;
       --secondary: #145da0;
+      --accent: #c1121f;
       --text: #2b2b2b;
       --light: #f5f7fa;
-      --gray: #6b7280;
     }
 
     * {
@@ -30,36 +30,35 @@
     header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: #fff;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.1rem;
+      font-size: 2.2rem;
       margin-bottom: 10px;
     }
 
     header p {
-      max-width: 760px;
+      max-width: 800px;
       margin: auto;
       opacity: 0.95;
     }
 
     section {
-      padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
+      padding: 60px 20px;
     }
 
     h2 {
       color: var(--primary);
-      margin-bottom: 25px;
-      font-size: 1.8rem;
+      font-size: 2rem;
+      margin-bottom: 30px;
     }
 
     h3 {
       color: var(--secondary);
-      margin-top: 20px;
       margin-bottom: 10px;
     }
 
@@ -67,7 +66,7 @@
       background: #fff;
       padding: 28px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       margin-bottom: 30px;
     }
 
@@ -76,34 +75,10 @@
       margin-top: 10px;
     }
 
-    .cta {
-      margin-top: 40px;
-      background: #0b2a4a;
-      color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .cta a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 26px;
-      background: #145da0;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-
-    .cta a:hover {
-      background: #0e4c88;
-    }
-
     footer {
       background: #0b2a4a;
       color: #fff;
-      padding: 35px 20px;
+      padding: 40px 20px;
       font-size: 0.9rem;
     }
 
@@ -113,9 +88,29 @@
       opacity: 0.9;
     }
 
+    /* Botão voltar */
+    .voltar {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 22px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+
+    .voltar:hover {
+      background: #9b0f18;
+    }
+
     @media (max-width: 768px) {
       header h1 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
       }
     }
   </style>
@@ -123,81 +118,156 @@
 
 <body>
 
+<a href="/" class="voltar">Voltar</a>
+
 <header>
   <h1>Programas de Pós-Graduação</h1>
-  <p>Mestrado e Doutorado Acadêmico – Intermediação Educacional Internacional</p>
+  <p>Mestrado (26 meses) e Doutorado (36 meses) — Intermediação Educacional Internacional</p>
 </header>
 
 <section>
-  <h2>Visão Geral dos Programas</h2>
-  <div class="card">
-    <p>
-      A Nacional Pesquisa & Educação apresenta programas de pós-graduação stricto sensu
-      (Mestrado e Doutorado Acadêmico), ofertados por universidade estrangeira devidamente
-      constituída, com foco em formação científica, produção acadêmica e pesquisa de alto nível.
-    </p>
-  </div>
+  <h2>Mestrados Acadêmicos — 26 meses</h2>
 
   <div class="card">
-    <h3>Mestrado Acadêmico</h3>
+    <h3>Mestrado em Saúde Pública</h3>
     <p>
-      Programa voltado ao desenvolvimento científico e metodológico, com elaboração de
-      dissertação e produção intelectual qualificada.
+      Voltado à formação científica para análise, planejamento e avaliação de políticas públicas,
+      sistemas de saúde e promoção da saúde coletiva.
     </p>
+    <strong>Linhas de Pesquisa</strong>
     <ul>
-      <li>Projeto de pesquisa orientado</li>
-      <li>Elaboração de dissertação</li>
-      <li>Formação para docência e pesquisa</li>
-      <li>Produção de artigos científicos</li>
+      <li>Políticas Públicas de Saúde</li>
+      <li>Saúde Coletiva e Epidemiologia</li>
+      <li>Promoção da Saúde e Qualidade de Vida</li>
+      <li>Gestão e Planejamento em Saúde</li>
+      <li>Determinantes Sociais da Saúde</li>
     </ul>
-    <p><strong>Duração média:</strong> 18 a 24 meses</p>
   </div>
 
   <div class="card">
-    <h3>Doutorado Acadêmico</h3>
+    <h3>Mestrado em Educação</h3>
     <p>
-      Programa destinado à formação de pesquisadores de alto nível, com foco na produção
-      de conhecimento original e relevante.
+      Destinado ao aprofundamento teórico e metodológico em educação, com foco em políticas,
+      práticas pedagógicas e processos de aprendizagem.
     </p>
+    <strong>Linhas de Pesquisa</strong>
     <ul>
-      <li>Pesquisa científica aprofundada</li>
-      <li>Elaboração de tese original</li>
-      <li>Orientação acadêmica contínua</li>
-      <li>Produção científica avançada</li>
+      <li>Políticas Educacionais</li>
+      <li>Processos de Ensino e Aprendizagem</li>
+      <li>Formação de Professores</li>
+      <li>Avaliação Educacional</li>
+      <li>Educação e Sociedade</li>
     </ul>
-    <p><strong>Duração média:</strong> 36 a 48 meses</p>
   </div>
 
   <div class="card">
-    <h3>Modalidade e Local</h3>
+    <h3>Mestrado em Psicologia</h3>
     <p>
-      Os programas são realizados no país de origem da universidade estrangeira, conforme
-      a legislação educacional vigente. Não há realização de aulas ou atividades acadêmicas
-      no território brasileiro.
+      Focado no estudo científico do comportamento humano e dos processos psicológicos em
+      diferentes contextos sociais e institucionais.
     </p>
+    <strong>Linhas de Pesquisa</strong>
+    <ul>
+      <li>Psicologia Social</li>
+      <li>Processos Cognitivos e Comportamentais</li>
+      <li>Saúde Mental e Bem-Estar</li>
+      <li>Psicologia do Desenvolvimento</li>
+      <li>Psicologia e Instituições</li>
+    </ul>
   </div>
 
   <div class="card">
-    <h3>Reconhecimento no Brasil</h3>
+    <h3>Mestrado em Antropologia</h3>
     <p>
-      Os diplomas emitidos poderão ser submetidos a processo de reconhecimento junto a
-      universidades públicas brasileiras, conforme normas do Ministério da Educação (MEC).
-      O reconhecimento não é automático e depende de análise individual.
+      Voltado à análise das dinâmicas culturais e sociais, com abordagem crítica e interdisciplinar
+      sobre as sociedades humanas.
     </p>
+    <strong>Linhas de Pesquisa</strong>
+    <ul>
+      <li>Cultura, Identidade e Sociedade</li>
+      <li>Antropologia Social e Cultural</li>
+      <li>Etnografia e Métodos Qualitativos</li>
+      <li>Diversidade, Gênero e Etnicidade</li>
+      <li>Processos Socioculturais Contemporâneos</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Doutorados Acadêmicos — 36 meses</h2>
+
+  <div class="card">
+    <h3>Doutorado em Saúde Pública</h3>
+    <p>
+      Formação avançada de pesquisadores capazes de produzir conhecimento original com impacto
+      científico e social na área da saúde pública.
+    </p>
+    <strong>Linhas de Pesquisa</strong>
+    <ul>
+      <li>Epidemiologia Avançada</li>
+      <li>Políticas e Sistemas de Saúde</li>
+      <li>Saúde Coletiva e Determinantes Sociais</li>
+      <li>Avaliação de Programas em Saúde</li>
+      <li>Saúde Global</li>
+    </ul>
   </div>
 
-  <div class="cta">
-    <p>Deseja receber orientações institucionais sobre ingresso e documentação?</p>
-    <a href="/index.html#contato">Falar com atendimento</a>
+  <div class="card">
+    <h3>Doutorado em Educação</h3>
+    <p>
+      Produção de conhecimento original em educação, com foco em políticas públicas, currículo,
+      práticas pedagógicas e inovação educacional.
+    </p>
+    <strong>Linhas de Pesquisa</strong>
+    <ul>
+      <li>Políticas Públicas em Educação</li>
+      <li>Currículo e Práticas Pedagógicas</li>
+      <li>Formação Docente Avançada</li>
+      <li>Educação e Tecnologia</li>
+      <li>Educação e Transformações Sociais</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Doutorado em Antropologia</h3>
+    <p>
+      Pesquisa aprofundada sobre fenômenos culturais e sociais, com contribuição teórica relevante
+      e produção científica original.
+    </p>
+    <strong>Linhas de Pesquisa</strong>
+    <ul>
+      <li>Antropologia das Sociedades Contemporâneas</li>
+      <li>Cultura, Poder e Identidade</li>
+      <li>Antropologia Política e Econômica</li>
+      <li>Etnicidade, Gênero e Diversidade</li>
+      <li>Metodologias Avançadas em Antropologia</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Doutorado em Psicologia</h3>
+    <p>
+      Destinado à formação de pesquisadores em processos psicológicos, comportamento humano
+      e saúde mental em contextos complexos.
+    </p>
+    <strong>Linhas de Pesquisa</strong>
+    <ul>
+      <li>Psicologia Social Avançada</li>
+      <li>Processos Cognitivos e Neuropsicologia</li>
+      <li>Saúde Mental e Intervenções Psicológicas</li>
+      <li>Desenvolvimento Humano</li>
+      <li>Psicologia, Instituições e Sociedade</li>
+    </ul>
   </div>
 </section>
 
 <footer>
   <p>
-    A Nacional Pesquisa & Educação não é instituição de ensino superior, não ministra aulas,
-    não realiza atividades acadêmicas e não emite diplomas. Atua exclusivamente como
-    intermediadora educacional internacional. Os diplomas são emitidos por universidade
-    estrangeira e o reconhecimento no Brasil depende de processo próprio conforme normas do MEC.
+    A Nacional Pesquisa & Educação atua exclusivamente como intermediadora educacional
+    internacional. Não é instituição de ensino superior, não ministra aulas, não realiza
+    atividades acadêmicas e não emite diplomas. Os programas são ofertados por universidade
+    estrangeira. O reconhecimento dos títulos no Brasil depende de processo próprio conforme
+    normas do Ministério da Educação (MEC).
   </p>
 </footer>
 
