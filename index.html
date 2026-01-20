@@ -2,72 +2,85 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nacional Pesquisa Educação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nacional Pesquisa & Educação</title>
 
-  <meta name="description" content="A Nacional Pesquisa Educação atua como representante institucional no Brasil de universidades estrangeiras, oferecendo informações sobre programas acadêmicos realizados integralmente no exterior.">
-  
   <style>
-    body {
+    :root {
+      --primary: #0b2a4a;
+      --secondary: #145da0;
+      --text: #2b2b2b;
+      --light: #f5f7fa;
+      --gray: #6b7280;
+    }
+
+    * {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      background-color: #f7f7f7;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--text);
       line-height: 1.6;
     }
 
     header {
-      background: #0b1c2d;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: #fff;
       padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
+      font-size: 2.2rem;
       margin-bottom: 10px;
-      font-size: 32px;
     }
 
     header p {
       max-width: 720px;
-      margin: 0 auto;
-      font-size: 18px;
+      margin: auto;
       opacity: 0.95;
     }
 
     section {
       padding: 60px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      background: #fff;
-      margin-top: 20px;
-      border-radius: 6px;
     }
 
     section h2 {
-      color: #0b1c2d;
+      color: var(--primary);
       margin-bottom: 20px;
-      font-size: 26px;
+      font-size: 1.8rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+    section h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: var(--secondary);
     }
 
-    .box {
-      background: #f1f3f5;
-      padding: 20px;
-      border-radius: 6px;
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 25px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
     }
 
     footer {
-      background: #0b1c2d;
+      background: #0b2a4a;
       color: #fff;
       padding: 40px 20px;
-      margin-top: 40px;
-      font-size: 14px;
+      font-size: 0.9rem;
     }
 
     footer p {
@@ -76,10 +89,26 @@
       opacity: 0.9;
     }
 
-    .disclaimer {
-      font-size: 13px;
-      opacity: 0.85;
-      margin-top: 15px;
+    .contact {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .contact strong {
+      display: block;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
     }
   </style>
 </head>
@@ -87,81 +116,121 @@
 <body>
 
 <header>
-  <h1>Nacional Pesquisa Educação</h1>
-  <p>
-    Representação institucional no Brasil de universidades estrangeiras,
-    com atuação informativa e internacional.
-  </p>
+  <h1>Nacional Pesquisa & Educação</h1>
+  <p>Intermediação educacional internacional para programas de Mestrado e Doutorado acadêmico</p>
 </header>
 
 <section>
-  <h2>Quem Somos</h2>
-  <p>
-    A <strong>Nacional Pesquisa Educação</strong> é uma empresa brasileira que atua
-    como representante institucional de universidades estrangeiras,
-    oferecendo informações acadêmicas, orientações institucionais
-    e suporte inicial a interessados em programas de pós-graduação
-    realizados integralmente no exterior.
-  </p>
-</section>
-
-<section>
-  <h2>Atuação Internacional</h2>
-  <div class="grid">
-    <div class="box">
-      <h3>Universidades Estrangeiras</h3>
-      <p>
-        Representamos instituições de ensino superior sediadas fora do Brasil,
-        devidamente reconhecidas em seus países de origem.
-      </p>
-    </div>
-
-    <div class="box">
-      <h3>Programas no Exterior</h3>
-      <p>
-        Os cursos, atividades acadêmicas, aulas e avaliações
-        são realizados exclusivamente fora do território brasileiro.
-      </p>
-    </div>
-
-    <div class="box">
-      <h3>Orientação Institucional</h3>
-      <p>
-        Atuamos de forma informativa, apresentando caminhos acadêmicos,
-        requisitos gerais e processos internacionais.
-      </p>
-    </div>
+  <h2>Apresentação Institucional</h2>
+  <div class="card">
+    <p>
+      A <strong>Nacional Pesquisa & Educação</strong> é uma empresa brasileira especializada em
+      <strong>intermediação educacional internacional</strong>, atuando na orientação, informação e apoio
+      institucional a estudantes interessados em programas de pós-graduação stricto sensu
+      (Mestrado e Doutorado) ofertados por universidade estrangeira devidamente constituída.
+    </p>
+    <p>
+      A empresa não é instituição de ensino, não ministra aulas e não emite diplomas, atuando
+      exclusivamente como intermediadora educacional.
+    </p>
   </div>
 </section>
 
 <section>
-  <h2>Informações Importantes</h2>
-  <p>
-    A Nacional Pesquisa Educação não é instituição de ensino,
-    não oferta cursos no Brasil e não realiza atividades acadêmicas
-    presenciais ou a distância em território nacional.
-  </p>
+  <h2>Programas de Pós-Graduação</h2>
 
-  <p>
-    O eventual reconhecimento de títulos estrangeiros no Brasil
-    é de responsabilidade exclusiva do interessado,
-    nos termos da legislação vigente e das normas das universidades brasileiras.
-  </p>
+  <div class="card">
+    <h3>Mestrado Acadêmico</h3>
+    <p>
+      O Mestrado Acadêmico tem como objetivo aprofundar a formação científica do estudante,
+      desenvolvendo competências em pesquisa e metodologia científica.
+    </p>
+    <ul>
+      <li>Formação científica e acadêmica</li>
+      <li>Projeto de pesquisa e dissertação</li>
+      <li>Orientação acadêmica individual</li>
+      <li>Produção de artigos científicos</li>
+    </ul>
+    <p><strong>Duração média:</strong> 18 a 24 meses</p>
+  </div>
+
+  <div class="card">
+    <h3>Doutorado Acadêmico</h3>
+    <p>
+      O Doutorado Acadêmico visa à formação de pesquisadores de alto nível, capazes de produzir
+      conhecimento original e relevante em sua área de atuação.
+    </p>
+    <ul>
+      <li>Pesquisa científica aprofundada</li>
+      <li>Elaboração de tese original</li>
+      <li>Orientação acadêmica contínua</li>
+      <li>Produção científica avançada</li>
+    </ul>
+    <p><strong>Duração média:</strong> 36 a 48 meses</p>
+  </div>
+</section>
+
+<section>
+  <h2>Modalidade e Funcionamento</h2>
+  <div class="card">
+    <p>
+      Os programas são ofertados por <strong>universidade estrangeira</strong>, com atividades acadêmicas
+      realizadas no país de origem da instituição, conforme a legislação educacional vigente.
+    </p>
+    <p>
+      A Nacional Pesquisa & Educação atua exclusivamente na orientação e intermediação institucional,
+      não realizando aulas, avaliações, bancas ou certificações no Brasil.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Processo de Ingresso</h2>
+  <div class="card">
+    <ul>
+      <li>Análise documental e acadêmica</li>
+      <li>Avaliação do histórico acadêmico</li>
+      <li>Verificação de aderência à linha de pesquisa</li>
+      <li>Encaminhamento à universidade estrangeira</li>
+    </ul>
+    <p>
+      Os critérios de aceitação são definidos exclusivamente pela instituição de ensino responsável
+      pelo programa.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Reconhecimento e Validade no Brasil</h2>
+  <div class="card">
+    <p>
+      Os diplomas são emitidos por universidade estrangeira. Para fins de validade no Brasil,
+      poderão ser submetidos a processo de reconhecimento junto a universidades públicas brasileiras,
+      conforme normas do Ministério da Educação (MEC).
+    </p>
+    <p>
+      O reconhecimento não é automático e depende de análise individual, sendo de responsabilidade
+      do titular do diploma.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Contato</h2>
+  <div class="contact">
+    <p>Para informações institucionais sobre os programas:</p>
+    <strong>WhatsApp:</strong> (xx) xxxxx-xxxx  
+    <strong>E-mail:</strong> contato@nacionalpesquisa.com.br  
+    <strong>Site:</strong> www.nacionalpesquisa.com.br
+  </div>
 </section>
 
 <footer>
   <p>
-    <strong>Nacional Pesquisa Educação</strong><br>
-    Empresa brasileira de representação institucional internacional.<br><br>
-
-    Este site possui caráter exclusivamente informativo e institucional.
-    Não constitui oferta de curso, matrícula, certificação ou atividade acadêmica no Brasil.
-  </p>
-
-  <p class="disclaimer">
-    Conforme a legislação educacional brasileira, o reconhecimento de diplomas
-    estrangeiros depende de análise posterior por universidades brasileiras
-    legalmente habilitadas.
+    A Nacional Pesquisa & Educação não é instituição de ensino superior, não ministra aulas,
+    não realiza atividades acadêmicas e não emite diplomas. Atua exclusivamente como
+    intermediadora educacional internacional. Os diplomas são emitidos por universidade
+    estrangeira e o reconhecimento no Brasil depende de processo próprio conforme normas do MEC.
   </p>
 </footer>
 
